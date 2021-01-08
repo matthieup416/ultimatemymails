@@ -1,10 +1,8 @@
 var messagesCount = $('p').length;
 $('#count').text(messagesCount);
 
-
-
 $("body").on("click", '.trash', function(){
-    this.parentNode.remove();
+    $(this).parent().remove();
     var messagesCount = $('p').length;
     $('#count').text(messagesCount);
 })
