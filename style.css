@@ -1,85 +1,97 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F5F6FA;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f6fa;
+  font-size: 14px;
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    background-color: #FFFFFF;
-    border-top: 1px solid #DADADA;
-    border-right: 1px solid #DADADA;
-    border-left: 1px solid #DADADA;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  background-color: #ffffff;
+  border-top: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-left: 1px solid #dadada;
+  padding: 15px;
 }
 
 h6 {
-    font-size: 14px;
-    margin: 0px;
+  font-size: 14px;
+  margin: 0px;
 }
 
 .trash {
-    width: 15px;
-    margin-left: auto;
+  width: 15px;
+  margin-left: auto;
 }
 
 .avatar {
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .last-row {
-    border-bottom: 1px solid #DADADA;
+  border-bottom: 1px solid #dadada;
 }
 
 #add-message {
-    margin-right: 15px;
-    width: 85%;
-    padding: 8px 5px;
+  margin-right: 15px;
+  width: 85%;
+  padding: 8px 5px;
 }
 
 #add-message:focus {
-    outline:0;
+  outline: 0;
 }
 
 #btn-add {
-    border-color: #1E90FF;
-    border-radius: 5px;
-    color: #1E90FF;
-    font-size: 16px;
-    padding: 6px;
+  border-color: #1e90ff;
+  border-radius: 5px;
+  color: #1e90ff;
+  font-size: 16px;
+  padding: 6px;
 }
 
 #btn-add:focus {
-    outline:0;
+  outline: 0;
 }
 
 #search-message {
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 60%;
-    padding: 8px 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 30%;
+  padding: 8px 5px;
 }
 
 #search-message:focus {
-    outline:0;
+  outline: 0;
 }
 
 #btn-search {
-    border-color: #1E90FF;
-    border-radius: 5px;
-    color: #1E90FF;
-    font-size: 16px;
-    padding: 6px;
+  border-color: #1e90ff;
+  border-radius: 5px;
+  color: #1e90ff;
+  font-size: 16px;
+  padding: 6px;
+  margin-left: auto;
 }
 
 #btn-search:focus {
-    outline:0;
+  outline: 0;
 }
 
+#icon {
+  padding: 10px;
+  color: green;
+  opacity: 0.8;
+}
+
+#icon:hover {
+  transform: scale(1.1) rotate(20deg);
+  opacity: 1;
+  cursor: pointer;
+}
