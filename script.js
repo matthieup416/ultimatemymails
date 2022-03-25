@@ -28,7 +28,20 @@ $('#btn-add').click(function () {
   $('#add-message').val('')
 })
 
-// RECHERCHE VERSION DE BASE
+// BOUTON POUR REFRESH (regardez aussi le CSS pour la petite animation du picto en :hover pseudo-classe)
+$('#icon').click(function () {
+  $('h6').each(function () {
+    $(this).parent().parent().fadeIn()
+  })
+})
+
+// Animation Jquery sur l'input texte de recherche
+// Similaire à ce qu'avait fait Marin en CSS
+$('#search-message').click(function () {
+  $('#search-message').animate({ width: '60%' }, 500)
+})
+
+// ALGO RECHERCHE VERSION DE BASE
 $('#btn-search').click(function () {
   $('h6').each(function () {
     if ($('#search-message').val() != $(this).text()) {
@@ -49,20 +62,6 @@ $('#btn-search').click(function () {
 //     }
 //   })
 //   $('#search-message').val('')
-// })
-
-// BOUTON POUR REFRESH (regardez aussi le CSS pour la petite animation du picto en :hover pseudo-classe)
-$('#icon').click(function () {
-  $('h6').each(function () {
-    $(this).parent().parent().fadeIn()
-  })
-})
-
-// Animation Jquery sur l'input texte de recherche
-// Similaire à ce qu'avait fait Marin en CSS
-
-// $('#search-message').click(function () {
-//   $('#search-message').animate({ width: '60%' }, 500)
 // })
 
 //// VERSION 1.1 avec une partie du nom
